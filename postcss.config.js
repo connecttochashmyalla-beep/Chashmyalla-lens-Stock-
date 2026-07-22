@@ -1,18 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  root: '.',
-  plugins: [react()],
-  server: {
-    port: 3000,
-    strictPort: false
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   },
-  build: {
-    outDir: 'dist',
-    sourcemap: false,
-    rollupOptions: {
-      input: './index.html'
-    }
-  }
-})
+}
